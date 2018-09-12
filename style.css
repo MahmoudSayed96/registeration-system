@@ -1,0 +1,172 @@
+
+/* ------------------------- End General Roles ----------------------------- */
+body {
+    background:#eee;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    padding:20px;
+    text-align: center;
+}
+.transition {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+/* ------------------------- End General Roles ----------------------------- */
+#main {
+    background-color: #34495e;
+    color: #FFF;
+    width: 620px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #34495e;
+    overflow: hidden;
+}
+
+#main h1 {
+    font-size: 40px;
+    font-weight: bold;
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(24,end);
+}
+
+@keyframes typing {
+    from{width: 0;}
+}
+
+#main a {
+    background-color: #3498db;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+#main a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #333;
+    height: 2px;
+    bottom: 5px;
+    left: 20px;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    visibility: hidden;/* For Browers Don't Support Scale()*/
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#main a:hover {
+    background-color: #FFF;
+    color: #111;
+}
+
+#main a:hover:after {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+    visibility: visible;
+}
+.hide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#tbl-insert {
+    width: 600px;
+    margin: 20px auto;
+}
+
+#tbl-insert td {
+    color: #262626;
+    width: 50%;
+    font-weight: 18px;
+}
+
+#tbl-insert input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #CCC;
+    outline: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#tbl-insert input:hover,
+#tbl-insert input:focus {
+    background:rgb(255, 255, 147);
+    border: 2px solid #DDD;
+}
+
+#tbl-insert button {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#tbl_event,
+#tbl_data {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #DDD;
+    border-radius: 5px;
+}
+
+#tbl_event tr:nth-child(even),
+#tbl_data tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+#tbl_event tr:hover,
+#tbl_data tr:hover {
+    background-color: #3498db;
+}
+
+#tbl_event th,
+#tbl_data th {
+    background-color: #616161;
+    color: #FFF;
+}
+
+#tbl_event td,
+#tbl_event th,
+#tbl_data td,
+#tbl_data th {
+    padding: 8px;
+}

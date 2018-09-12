@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0181)https://piazza-resources.s3.amazonaws.com/j7s3vggkzucsd/jaqy3lfdpr365p/index.html?AWSAccessKeyId=AKIAIEDNRLJ4AZKBW6HA&Expires=1512356010&Signature=TKD%2FVTQcIbdXft6ajPN%2BMyWgXB0%3D -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+   <div class="container">
+    <div id="main">
+      <h1 class="transition">What do You Want to do?</h1>
+      <a href="#" name="generate" data-id="generate">Register</a>
+      <a href="#" name="retrieve_data" data-id="data">Retrieve Data</a>
+      <a href="#" name="retrieve_events" data-id="events">Retrieve Events</a>
+    </div>
+    <div id="generate" class="hide">
+      <h2>Enter Your Information</h2>
+    <form id="register">
+        <table id="tbl-insert">
+          <tbody>
+            <tr>
+              <td>Username:</td> <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+              <td>Password:</td> <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+              <td>Email:</td> <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+              <td colspan="3"><button id="send_to" type="submit">Register</button></td>
+            </tr>
+        </tbody>
+      </table>
+    </form>
+
+    </div>
+    <div id="events" class="hide">
+      <h2>Logged Events</h2>
+    </div>
+    <div id="data" class="hide">
+      <h2>Stored Users</h2>
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/collect.js"></script>
+</body>
+</html>
